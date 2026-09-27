@@ -1,0 +1,3846 @@
+{
+ "machine": "Python 3.14.5 on Windows, 12 logical CPUs",
+ "dense": "BAAI/bge-small-en-v1.5",
+ "benchmarks": {
+  "scifact": {
+   "docs": 5183,
+   "queries": 300,
+   "systems": {
+    "BM25": {
+     "ndcg@10": 0.6667016786506456,
+     "recall@1": 0.532611111111111,
+     "recall@3": 0.6739999999999999,
+     "recall@5": 0.7242777777777778,
+     "recall@10": 0.7806111111111111,
+     "recall@20": 0.8265555555555556,
+     "recall@50": 0.8750555555555555,
+     "recall@100": 0.8858888888888888
+    },
+    "dense": {
+     "ndcg@10": 0.7005040179184696,
+     "recall@1": 0.5665,
+     "recall@3": 0.6887777777777777,
+     "recall@5": 0.7426111111111111,
+     "recall@10": 0.8278888888888889,
+     "recall@20": 0.8629999999999999,
+     "recall@50": 0.9333333333333333,
+     "recall@100": 0.95
+    },
+    "RRF": {
+     "ndcg@10": 0.7091403763869866,
+     "recall@1": 0.5682777777777779,
+     "recall@3": 0.7133888888888889,
+     "recall@5": 0.7686666666666667,
+     "recall@10": 0.8320555555555555,
+     "recall@20": 0.8768888888888888,
+     "recall@50": 0.9476666666666667,
+     "recall@100": 0.9683333333333334
+    }
+   },
+   "rrf_k": {
+    "1": 0.7259566313248165,
+    "10": 0.7167540456664204,
+    "60": 0.7091403763869866,
+    "200": 0.7081596613715703,
+    "1000": 0.7063742361881418
+   },
+   "per_query": [
+    {
+     "query": "0-dimensional biomaterials show inductive properties.",
+     "bm25": 200,
+     "dense": 13,
+     "rrf": 35
+    },
+    {
+     "query": "1,000 genomes project enables mapping of genetic sequence variation consisting of rare variants with larger penetrance effects than common variants.",
+     "bm25": 1,
+     "dense": 5,
+     "rrf": 2
+    },
+    {
+     "query": "1/2000 in UK have abnormal PrP positivity.",
+     "bm25": 1,
+     "dense": 3,
+     "rrf": 1
+    },
+    {
+     "query": "5% of perinatal mortality is due to low birth weight.",
+     "bm25": 93,
+     "dense": 47,
+     "rrf": 34
+    },
+    {
+     "query": "A deficiency of vitamin B12 increases blood levels of homocysteine.",
+     "bm25": 6,
+     "dense": 5,
+     "rrf": 6
+    },
+    {
+     "query": "A high microerythrocyte count raises vulnerability to severe anemia in homozygous alpha (+)- thalassemia trait subjects.",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "A total of 1,000 people in the UK are asymptomatic carriers of vCJD infection.",
+     "bm25": 2,
+     "dense": 9,
+     "rrf": 2
+    },
+    {
+     "query": "ADAR1 binds to Dicer to cleave pre-miRNA.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "AIRE is expressed in some skin tumors.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "ALDH1 expression is associated with better breast cancer outcomes.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "ALDH1 expression is associated with poorer prognosis in breast cancer.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "AMP-activated protein kinase (AMPK) activation increases inflammation-related fibrosis in the lungs.",
+     "bm25": 8,
+     "dense": 1,
+     "rrf": 3
+    },
+    {
+     "query": "APOE4 expression in iPSC-derived neurons increases AlphaBeta production and tau phosphorylation causing GABA neuron degeneration.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "APOE4 expression in iPSC-derived neurons increases AlphaBeta production and tau phosphorylation, delaying GABA neuron degeneration.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Activation of PPM1D suppresses p53 function.",
+     "bm25": 1,
+     "dense": 5,
+     "rrf": 1
+    },
+    {
+     "query": "Activator-inhibitor pairs are provided dorsally by Admpchordin.",
+     "bm25": 11,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Active H. pylori urease has a polymeric structure that compromises two subunits, UreA and UreB.",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Albendazole is used to treat lymphatic filariasis.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Alizarin forms hydrogen bonds with residues involved in PGAM1 substrate binding.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "All hematopoietic stem cells segregate their chromosomes randomly.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Angiotensin converting enzyme inhibitors are associated with increased risk for functional renal insufficiency.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Anthrax spores can be disposed of easily after they are dispersed.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Antibiotic induced alterations in the gut microbiome reduce resistance against Clostridium difficile",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Antiretroviral therapy reduces rates of tuberculosis across a broad range of CD4 strata.",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "Arginine 90 in p150n is important for interaction with EB1.",
+     "bm25": 2,
+     "dense": 4,
+     "rrf": 3
+    },
+    {
+     "query": "Arterioles have a larger lumen diameter than venules.",
+     "bm25": 3,
+     "dense": 200,
+     "rrf": 12
+    },
+    {
+     "query": "Articles published in open access format are less likely to be cited than traditional journals.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Articles published in open access format are more likely to be cited than traditional journals.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Aspirin inhibits the production of PGE2.",
+     "bm25": 200,
+     "dense": 10,
+     "rrf": 27
+    },
+    {
+     "query": "Assembly of invadopodia is triggered by focal generation of phosphatidylinositol-3,4-biphosphate and the activation of the nonreceptor tyrosine kinase Src.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Asymptomatic visual impairment screening in elderly populations does not lead to improved vision.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Auditory entrainment is strengthened when people see congruent visual and auditory information.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Autologous transplantation of mesenchymal stem cells causes a higher rate of opportunistic infections than induction therapy with anti-interleukin-2 receptor antibodies.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Autologous transplantation of mesenchymal stem cells causes fewer opportunistic infections than induction therapy with anti-interleukin-2 receptor antibodies.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Autophagy declines in aged organisms.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Bariatric surgery has a positive impact on mental health.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Basophils counteract disease development in patients with systemic lupus erythematosus (SLE).",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Birth-weight is positively associated with breast cancer.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Blocking the interaction between TDP-43 and respiratory complex I proteins ND3 and ND6 leads to increased TDP-43-induced neuronal loss.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Bone marrow cells contribute to adult macrophage compartments.",
+     "bm25": 10,
+     "dense": 1,
+     "rrf": 4
+    },
+    {
+     "query": "Breast cancer development is determined exclusively by genetic factors.",
+     "bm25": 4,
+     "dense": 4,
+     "rrf": 2
+    },
+    {
+     "query": "CCL19 is absent within dLNs.",
+     "bm25": 1,
+     "dense": 7,
+     "rrf": 1
+    },
+    {
+     "query": "CHEK2 is not associated with breast cancer.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "CR is associated with higher methylation age.",
+     "bm25": 5,
+     "dense": 4,
+     "rrf": 4
+    },
+    {
+     "query": "CRP is not predictive of postoperative mortality following Coronary Artery Bypass Graft (CABG) surgery.",
+     "bm25": 6,
+     "dense": 7,
+     "rrf": 5
+    },
+    {
+     "query": "CX3CR1 on the Th2 cells impairs T cell survival",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "CX3CR1 on the Th2 cells promotes T cell survival",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "CX3CR1 on the Th2 cells promotes airway inflammation.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "CX3CR1 on the Th2 cells suppresses airway inflammation.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Carriers of the alcohol aldehyde dehydrogenase deficiency mutation drink less that non-carries.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Cataract and trachoma are the primary cause of blindness in Southern Sudan.",
+     "bm25": 2,
+     "dense": 2,
+     "rrf": 2
+    },
+    {
+     "query": "Cell autonomous sex determination in somatic cells does not occur in Galliformes.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Cell autonomous sex determination in somatic cells occurs in Passeriformes.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Cells lacking clpC have a defect in sporulation efficiency in Bacillus subtilis.",
+     "bm25": 1,
+     "dense": 3,
+     "rrf": 1
+    },
+    {
+     "query": "Cells undergoing methionine restriction may activate miRNAs.",
+     "bm25": 22,
+     "dense": 3,
+     "rrf": 5
+    },
+    {
+     "query": "Cellular aging closely links to an older appearance.",
+     "bm25": 200,
+     "dense": 16,
+     "rrf": 49
+    },
+    {
+     "query": "Chenodeosycholic acid treatment increases whole-body energy expenditure.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Chenodeosycholic acid treatment reduces whole-body energy expenditure.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Chronic aerobic exercise alters endothelial function, improving vasodilating mechanisms mediated by NO.",
+     "bm25": 6,
+     "dense": 6,
+     "rrf": 6
+    },
+    {
+     "query": "Cold exposure increases BAT recruitment.",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Cold exposure reduces BAT recruitment.",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Combination nicotine replacement therapies with varenicline or bupropion lead to significantly higher long-term abstinence rates at 52 weeks than varenicline monotherapy.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Combining phosphatidylinositide 3-kinase and MEK 1/2 inhibitors is effective at treating KRAS mutant tumors.",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "Commelina yellow mottle virus' (ComYMV) genome consists of 7489 baise pairs.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Crossover hot spots are not found within gene promoters in Saccharomyces cerevisiae.",
+     "bm25": 1,
+     "dense": 8,
+     "rrf": 1
+    },
+    {
+     "query": "Crosstalk between dendritic cells (DCs) and innate lymphoid cells (ILCs) is important in the regulation of intestinal homeostasis.",
+     "bm25": 1,
+     "dense": 8,
+     "rrf": 4
+    },
+    {
+     "query": "Cytochrome c is released from the mitochondrial intermembrane space to cytosol during apoptosis.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Cytosolic proteins bind to iron-responsive elements on mRNAs coding for DMT1. Cytosolic proteins bind to iron-responsive elements on mRNAs coding for proteins involved in iron uptake.",
+     "bm25": 4,
+     "dense": 2,
+     "rrf": 2
+    },
+    {
+     "query": "DMRT1 is a sex-determining gene that is epigenetically regulated by the MHM region.",
+     "bm25": 2,
+     "dense": 88,
+     "rrf": 10
+    },
+    {
+     "query": "De novo assembly of sequence data has more specific contigs than unassembled sequence data.",
+     "bm25": 5,
+     "dense": 35,
+     "rrf": 8
+    },
+    {
+     "query": "Deamination of cytidine to uridine on the minus strand of viral DNA results in catastrophic G-to-A mutations in the viral genome.",
+     "bm25": 3,
+     "dense": 69,
+     "rrf": 13
+    },
+    {
+     "query": "Deleting Raptor reduces G-CSF levels.",
+     "bm25": 5,
+     "dense": 43,
+     "rrf": 3
+    },
+    {
+     "query": "Deletion of \u03b1v\u03b28 does not result in a spontaneous inflammatory phenotype.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Dexamethasone decreases risk of postoperative bleeding.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Diabetic patients with acute coronary syndrome experience increased short-term and long-term risk for bleeding events.",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Discrimination between the initiator and elongation tRNAs depends on the translation initiation factor IF3.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Downregulation and mislocalization of Scribble prevents cell transformation and mammary tumorigenesis.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "During the primary early antibody response activated B cells migrate toward the inner-and outer paracortical areas where oxysterol accumulation is generated by stromal cells.",
+     "bm25": 1,
+     "dense": 3,
+     "rrf": 1
+    },
+    {
+     "query": "Enhanced early production of inflammatory chemokines improves viral control in the lung.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Epidemiological disease burden from noncommunicable diseases is more prevalent in low economic settings.",
+     "bm25": 20,
+     "dense": 2,
+     "rrf": 4
+    },
+    {
+     "query": "Epigenetic modulating agents (EMAs) modulate antitumor immune response in a cancer model system.",
+     "bm25": 3,
+     "dense": 2,
+     "rrf": 2
+    },
+    {
+     "query": "Errors in peripheral IV drug administration are most common during bolus administration and multiple-step medicine preparations.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Ethanol stress decreases the expression of IBP in bacteria.",
+     "bm25": 3,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Exposure to fine particulate air pollution is relate to anxiety prevalence.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Febrile seizures increase the threshold for development of epilepsy.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Febrile seizures reduce the threshold for development of epilepsy.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Female carriers of the Apolipoprotein E4 (APOE4) allele have increased risk for dementia.",
+     "bm25": 6,
+     "dense": 6,
+     "rrf": 6
+    },
+    {
+     "query": "Flexible molecules experience greater steric hindrance in the tumor microenviroment than rigid molecules.",
+     "bm25": 200,
+     "dense": 28,
+     "rrf": 56
+    },
+    {
+     "query": "FoxO3a activation in neuronal death is mediated by reactive oxygen species (ROS).",
+     "bm25": 200,
+     "dense": 12,
+     "rrf": 38
+    },
+    {
+     "query": "Free histones are degraded by a Rad53-dependent mechanism once DNA has been replicated.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Functional consequences of genomic alterations due to Myelodysplastic syndrome (MDS) are poorly understood due to the lack of an animal model.",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "Fz/PCP-dependent Pk localizes to the anterior membrane of neuroectoderm cells during zebrafish neuralation",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Fz/PCP-dependent Pk localizes to the anterior membrane of notochord cells during zebrafish neuralation.",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 2
+    },
+    {
+     "query": "GATA-3 is important for hematopoietic stem cell (HSC) function.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Gene expression does not vary appreciably across genetically identical cells.",
+     "bm25": 6,
+     "dense": 1,
+     "rrf": 9
+    },
+    {
+     "query": "Glycolysis is one of the primary glycometabolic pathways in cells.",
+     "bm25": 11,
+     "dense": 21,
+     "rrf": 7
+    },
+    {
+     "query": "Golli-deficient T-cells prefer to differentiate into an anergic phenotype in the adaptive immune response when there are increased levels of Ca2+ in the cytosol.",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "HNF4A mutations can cause diabetes in mutant carriers by the age of 14 years",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Headaches are not correlated with cognitive impairment.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Healthcare delivery efficiency in crowded delivery centers is impaired by improving structural, logistical, and interpersonal elements.",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "Helminths interfere with immune system control of macrophages activated by IL-4 favor Mycobacterium tuberculosis replication.",
+     "bm25": 1,
+     "dense": 5,
+     "rrf": 2
+    },
+    {
+     "query": "Hematopoietic Stem Cell purification reaches purity rate of up to 50%.",
+     "bm25": 50,
+     "dense": 32,
+     "rrf": 24
+    },
+    {
+     "query": "High cardiopulmonary fitness causes increased mortality rate.",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "High dietary calcium intakes are unnecessary for prevention of secondary hyperparathyroidism in subjects with 25(OH)D levels above 75 nmol/liter.",
+     "bm25": 12,
+     "dense": 1,
+     "rrf": 3
+    },
+    {
+     "query": "High levels of CRP reduces the risk of exacerbations in chronic obstructive pulmonary disease (COPD).",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "High levels of copeptin decrease risk of diabetes.",
+     "bm25": 28,
+     "dense": 36,
+     "rrf": 17
+    },
+    {
+     "query": "High-sensitivity cardiac troponin T (HSCT-T) dosage may not be diagnostic if the onset of symptoms occurs less than 3 hours before acute myocardial injury (AMI).",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Histone demethylase recruitment and a transient decrease in histone methylation is necessary for ligand-dependent induction of transcription by nuclear receptors.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Homozygous deletion of murine Sbds gene from osterix-expressing mesenchymal stem and progenitor cells (MPCs) prevents oxidative stress.",
+     "bm25": 2,
+     "dense": 5,
+     "rrf": 2
+    },
+    {
+     "query": "Human T-lymphotropic virus type-I-associated myelopathy / tropical spastic paraparesis (HAM/TSP) patients produce Immunoglobulin G (IgG) antibodies which cross-react with an immunodominant epitope in Tax.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Hyperfibrinogenemia decreases rates of femoropopliteal bypass thrombosis.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Hyperfibrinogenemia increases rates of femoropopliteal bypass thrombosis.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Hypertension is frequently observed in type 1 diabetes patients.",
+     "bm25": 200,
+     "dense": 7,
+     "rrf": 46
+    },
+    {
+     "query": "Hypocretin neurones induce panicprone state in rats.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Hypoglycemia increases the risk of dementia.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Hypothalamic glutamate neurotransmission is crucial to energy balance.",
+     "bm25": 6,
+     "dense": 3,
+     "rrf": 2
+    },
+    {
+     "query": "IFIT1 restricts viral replication by sequestrating mis-capped viral RNAs.",
+     "bm25": 34,
+     "dense": 6,
+     "rrf": 6
+    },
+    {
+     "query": "IRG1 has antiviral effects against neurotropic viruses.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "ITAM phosphorylation prevents the transfer of the T cell receptor (TCR) signal from the echo-domain to the cytoplasmic tail of the T cell receptor (TCR).",
+     "bm25": 5,
+     "dense": 13,
+     "rrf": 6
+    },
+    {
+     "query": "IgA plasma cells that are specific for transglutaminase 2 accumulate in the duodenal mucosa on commencement of a gluten-free diet.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Immune complex triggered cell death leads to extracellular release of neutrophil protein HMGB1.",
+     "bm25": 7,
+     "dense": 4,
+     "rrf": 4
+    },
+    {
+     "query": "Immune responses result in the development of inflammatory Th17 cells and anti-inflammatory iTregs.",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "In adult tissue, most T cells are memory T cells.",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "In domesticated populations of Saccharomyces cerevisiae, whole chromosome aneuploidy is very uncommon.",
+     "bm25": 15,
+     "dense": 1,
+     "rrf": 3
+    },
+    {
+     "query": "In mice, P. chabaudi parasites are able to proliferate faster early in infection when inoculated at lower numbers than when inoculated at high numbers.",
+     "bm25": 200,
+     "dense": 4,
+     "rrf": 22
+    },
+    {
+     "query": "In mouse models, the loss of CSF1R facilitates MOZ-TIF2-induced leuekmogenesis.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "In transgenic mice harboring green florescent protein under the control of the Sox2 promoter, less than ten percent of the cells with green florescent colocalize with cell proliferation markers.",
+     "bm25": 6,
+     "dense": 3,
+     "rrf": 3
+    },
+    {
+     "query": "In young and middle-aged adults, current or remote uses of ADHD medications do not increase the risk of serious cardiovascular events.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Incidence of heart failure decreased by 10% in women since 1979.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Incidence rates of cervical cancer have decreased.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Incidence rates of cervical cancer have increased due to nationwide screening programs based primarily on cytology to detect uterine cervical cancer.",
+     "bm25": 6,
+     "dense": 3,
+     "rrf": 4
+    },
+    {
+     "query": "Increased microtubule acetylation repairs LRRK2 Roc-COR domain mutation induced locomotor deficits.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Increased vessel density along with a reduction in fibrosis decreases the efficacy of chemotherapy treatments.",
+     "bm25": 4,
+     "dense": 32,
+     "rrf": 5
+    },
+    {
+     "query": "Individuals with low serum vitamin D concentrations have increased risk of multiple sclerosis.",
+     "bm25": 21,
+     "dense": 5,
+     "rrf": 12
+    },
+    {
+     "query": "Infection of human T-cell lymphotropic virus type 1 is most frequent in individuals of African origin.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Inositol lipid 3-phosphatase PTEN converts Ptdlns(3,4)P 2 into phosphatidylinositol 4-phosphate.",
+     "bm25": 3,
+     "dense": 1,
+     "rrf": 2
+    },
+    {
+     "query": "Input from  mental and physical health care professionals is effective at decreasing homelessness.",
+     "bm25": 8,
+     "dense": 2,
+     "rrf": 3
+    },
+    {
+     "query": "Insomnia can be effectively treated with cognitive behavioral therapy.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Insulin increases risk of severe kidney failure.",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Integrating classroom-based collaborative learning with Web-based collaborative learning leads to subpar class performance",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "Ivermectin is used to treat lymphatic filariasis.",
+     "bm25": 1,
+     "dense": 6,
+     "rrf": 1
+    },
+    {
+     "query": "Ivermectin is used to treat onchocerciasis.",
+     "bm25": 1,
+     "dense": 80,
+     "rrf": 2
+    },
+    {
+     "query": "LDL cholesterol has no involvement in the development of cardiovascular disease.",
+     "bm25": 1,
+     "dense": 9,
+     "rrf": 4
+    },
+    {
+     "query": "Lack of clpC does not affect sporulation efficiency in Bacillus subtilis cells.",
+     "bm25": 1,
+     "dense": 3,
+     "rrf": 1
+    },
+    {
+     "query": "Less than 10% of the gabonese children with Schimmelpenning-Feuerstein-Mims syndrome (SFM) had a plasma lactate of more than 5mmol/L.",
+     "bm25": 15,
+     "dense": 50,
+     "rrf": 8
+    },
+    {
+     "query": "Leukemia associated Rho guanine nucleotide-exchange factor represses RhoA in response to SRC activation.",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "Leuko-increased blood increases infectious complications in red blood cell transfusion.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Leuko-reduced blood reduces infectious complications in red blood cell transfusion.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Localization of PIN1 in the Arabidopsis embryo does not require VPS9a",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 2
+    },
+    {
+     "query": "Localization of PIN1 in the roots of Arabidopsis does not require VPS9a",
+     "bm25": 3,
+     "dense": 1,
+     "rrf": 2
+    },
+    {
+     "query": "Low expression of miR7a does represses target genes and exerts a biological function in ovaries.",
+     "bm25": 36,
+     "dense": 25,
+     "rrf": 7
+    },
+    {
+     "query": "Low expression of miR7a exerts a biological function in testis.",
+     "bm25": 200,
+     "dense": 38,
+     "rrf": 71
+    },
+    {
+     "query": "Low nucleosome occupancy correlates with low methylation levels across species.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Lupus-prone mice infected with curliproducing bacteria have higher autoantibody titers compared to controls.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Ly49Q directs the organization of neutrophil migration to inflammation sites by regulating membrane raft functions.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Ly6C hi monocytes have a lower inflammatory capacity compared to their Ly6C lo counterparts.",
+     "bm25": 2,
+     "dense": 8,
+     "rrf": 4
+    },
+    {
+     "query": "Ly6C hi monocytes have a lower inflammatory capacity than Ly6C lo monocytes.",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 3
+    },
+    {
+     "query": "Lymphadenopathy is observed in knockin mouse lacking the SHP-2 MAPK pathway.",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Macrolides have no protective effect against myocardial infarction.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Macrolides protect against myocardial infarction.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Macropinocytosis contributes to a cell's supply of amino acids via the intracellular uptake of protein.",
+     "bm25": 2,
+     "dense": 3,
+     "rrf": 2
+    },
+    {
+     "query": "Many proteins in human cells can be post-translationally modified at lysine residues via acetylation.",
+     "bm25": 9,
+     "dense": 2,
+     "rrf": 4
+    },
+    {
+     "query": "Mathematical models predict that using Artemisinin-based combination therapy over nongametocytocidal drugs have a dramatic impact in reducing malaria transmission.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Mercaptopurine is anabolized into the inactive methylmercaptopurine by thiopurine methyltrasnferase (TPMT).",
+     "bm25": 4,
+     "dense": 21,
+     "rrf": 3
+    },
+    {
+     "query": "Metastatic colorectal cancer treated with a single agent fluoropyrimidines resulted in reduced efficacy and lower quality of life when compared with oxaliplatin-based chemotherapy in elderly patients.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Mice defective for deoxyribonucleic acid (DNA) polymerase I (polI) reveal increased sensitivity to ionizing radiation (IR).",
+     "bm25": 200,
+     "dense": 5,
+     "rrf": 25
+    },
+    {
+     "query": "Mice that lack Interferon-\u03b3 or its receptor exhibit high resistance to experimental autoimmune myocarditis.",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 2
+    },
+    {
+     "query": "Mice without IFN-\u03b3 or its receptor are resistant to EAM induced with \u03b1-MyHC/CFA.",
+     "bm25": 16,
+     "dense": 9,
+     "rrf": 9
+    },
+    {
+     "query": "MicroRNA is involved in the regulation of Neural Stem Cell (NSC) differentiation and proliferation dynamic homeostasis",
+     "bm25": 3,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Microarray results from culture-amplified mixtures of serotypes correlate poorly with microarray results from uncultured mixtures.",
+     "bm25": 2,
+     "dense": 8,
+     "rrf": 2
+    },
+    {
+     "query": "Mitochondria are uninvolved in apoptosis.",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "Modifying the epigenome in the brain affects the normal human aging process by affecting certain genes related to neurogenesis.",
+     "bm25": 97,
+     "dense": 1,
+     "rrf": 14
+    },
+    {
+     "query": "Monoclonal antibody targeting of N-cadherin inhibits metastasis.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Most termination events in Okazaki fragments are sequence specific.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Mutant mice lacking SVCT2 have greatly increased ascorbic acid levels in both brain and adrenals.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Mutations in G-Beta protein GNB2 are present in many cancers, resulting in loss of interaction with G-alpha subunits and concomitant activation of AKT pathway.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "N-terminal cleavage increases success identifying transcription start sites.",
+     "bm25": 13,
+     "dense": 29,
+     "rrf": 3
+    },
+    {
+     "query": "N-terminal cleavage reduces success identifying transcription start sites.",
+     "bm25": 13,
+     "dense": 31,
+     "rrf": 3
+    },
+    {
+     "query": "N348I mutations cause resistance to zidovudine (AZT).",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "NF2 (Merlin) causes phosphorylation and subsequent cytoplasmic sequestration of YAP in Drosophila by activating LATS1/2 kinases.",
+     "bm25": 5,
+     "dense": 36,
+     "rrf": 5
+    },
+    {
+     "query": "NF2 (Merlin) prevents phosphorylation and subsequent cytoplasmic sequestration of YAP in Drosophila.",
+     "bm25": 11,
+     "dense": 200,
+     "rrf": 32
+    },
+    {
+     "query": "NFAT4 activation requires IP3R-mediated Ca2+ mobilization.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "NOX2-independent pathways can generate peroxynitrite by reacting with nitrogen intermediates.",
+     "bm25": 41,
+     "dense": 200,
+     "rrf": 77
+    },
+    {
+     "query": "NR5A2 is important in development of endometrial tissues.",
+     "bm25": 1,
+     "dense": 3,
+     "rrf": 2
+    },
+    {
+     "query": "Nanoparticles can be targeted against specific cell types by incorporating aptamers into lipid nanoparticles.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Neutrophil extracellular traps (NETs) are released by ANCA-stimulated neutrophils.",
+     "bm25": 1,
+     "dense": 5,
+     "rrf": 2
+    },
+    {
+     "query": "New drugs for tuberculosis often do not penetrate the necrotic portion of a tuberculosis lesion in high concentrations.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Non-invasive ventilation use should be decreased if there is inadequate response to conventional treatment.",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "Normal expression of RUNX1 has tumor-promoting effects.",
+     "bm25": 2,
+     "dense": 2,
+     "rrf": 2
+    },
+    {
+     "query": "Obesity decreases life quality.",
+     "bm25": 200,
+     "dense": 8,
+     "rrf": 39
+    },
+    {
+     "query": "Obesity is determined solely by environmental factors.",
+     "bm25": 8,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "Occupancy of ribosomes by IncRNAs do not make functional peptides.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Occupancy of ribosomes by IncRNAs mirror 5 0-UTRs",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Omnivores produce less trimethylamine N-oxide from dietary I-carnitine than vegetarians.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Only a minority of cells survive development after differentiation into stress-resistant spores.",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "PD-1 triggering on monocytes reduces IL-10 production by monocytes.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "PDPN promotes efficient motility along stromal surfaces by activating the C-type lectin receptor to rearrange the actin cytoskeleton in dendritic cells.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "PGE 2 promotes intestinal tumor growth by altering the expression of tumor suppressing and DNA repair genes.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "PKG-la plays an essential role in expression of pain hypersensitivity in PGK-la knockout mice.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "PPAR-RXRs are inhibited by PPAR ligands.",
+     "bm25": 200,
+     "dense": 48,
+     "rrf": 85
+    },
+    {
+     "query": "PPAR-RXRs can be activated by PPAR ligands.",
+     "bm25": 200,
+     "dense": 18,
+     "rrf": 41
+    },
+    {
+     "query": "Participating in six months of physical activity improves cognitive functioning.",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Patients in stable partnerships have a faster progression from HIV to AIDS.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Peroxynitrite is required for nitration of TCR/CD8.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Pleiotropic coupling of GLP-1R to intracellular effectors promotes distinct profiles of cellular signaling.",
+     "bm25": 3,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Podocytes are motile and migrate in the presence of injury.",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Polymeal nutrition reduces cardiovascular mortality.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Pretreatment with the Arp2/3 inhibitor CK-666 affects lamelliopodia formation.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Primary cervical cancer screening with HPV detection has higher longitudinal sensitivity than conventional cytology to detect cervical intraepithelial neoplasia grade 2.",
+     "bm25": 3,
+     "dense": 1,
+     "rrf": 3
+    },
+    {
+     "query": "Primary pro-inflammatory cytokines induce secondary pro- and anti-inflammatory mediators.",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "Proteins synthesized at the growth cone are ubiquitinated at a higher rate than proteins from the cell body.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Pseudogene PTENP1 regulates the expression of PTEN by functioning as an miRNA decoy.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Pyridostatin destabilizes the G - quadruplex in the telomeric region.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Radioiodine treatment of non-toxic multinodular goitre reduces thyroid volume.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Rapamycin decreases the concentration of triacylglycerols in fruit flies.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Rapid phosphotransfer rates govern fidelity in two component systems",
+     "bm25": 2,
+     "dense": 6,
+     "rrf": 3
+    },
+    {
+     "query": "Rapid up-regulation and higher basal expression of interferon-induced genes increase survival of granule cell neurons that are infected by West Nile virus.",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 2
+    },
+    {
+     "query": "Rapid up-regulation and higher basal expression of interferon-induced genes reduce survival of granule cell neurons that are infected by West Nile virus.",
+     "bm25": 2,
+     "dense": 2,
+     "rrf": 2
+    },
+    {
+     "query": "Recurrent mutations occur frequently within CTCF anchor sites adjacent to oncogenes.",
+     "bm25": 1,
+     "dense": 6,
+     "rrf": 2
+    },
+    {
+     "query": "Reduced responsiveness to interleukin-2 in regulatory T cells is associated with greater resistance to autoimmune diseases such as Type 1 Diabetes.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Replacement of histone H2A with H2A.Z slows gene activation in yeasts by stabilizing +1 nucleosomes.",
+     "bm25": 4,
+     "dense": 7,
+     "rrf": 7
+    },
+    {
+     "query": "Ribosomopathies have a low degree of cell and tissue specific pathology.",
+     "bm25": 200,
+     "dense": 6,
+     "rrf": 17
+    },
+    {
+     "query": "S-nitrosylated GAPDH physiologically transnitrosylates histone deacetylases.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Sildenafil improves erectile function in men who experience sexual dysfunction as a result of the use of SSRI antidepressants.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Silencing of Bcl2 is important for the maintenance and progression of tumors.",
+     "bm25": 200,
+     "dense": 1,
+     "rrf": 16
+    },
+    {
+     "query": "Smc5/6 engagment drives the activation of SUMO E3 ligase Mms21 by ATP-dependent remolding.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Statins decrease blood cholesterol.",
+     "bm25": 2,
+     "dense": 7,
+     "rrf": 4
+    },
+    {
+     "query": "Statins increase blood cholesterol.",
+     "bm25": 2,
+     "dense": 15,
+     "rrf": 6
+    },
+    {
+     "query": "Stroke patients with prior use of direct oral anticoagulants have a lower risk of in-hospital mortality than stroke patients with prior use of warfarin.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Subcutaneous fat depots undergo extensive browning processes after cold exposure.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Suboptimal nutrition is not predictive of chronic disease",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "Synaptic activity enhances local release of brain derived neurotrophic factor from postsynaptic dendrites.",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "T regulatory cells (tTregs) lacking \u03b1v\u03b28 are more adept at suppressing pathogenic T-cell responses during active inflammation.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "TCR/CD3 microdomains are a required to induce the immunologic synapse to activate T cells.",
+     "bm25": 5,
+     "dense": 8,
+     "rrf": 5
+    },
+    {
+     "query": "TNFAIP3 is a tumor suppressor in glioblastoma.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Taking 400mg of \u03b1-tocopheryl acetate helps to prevent prostate cancer.",
+     "bm25": 9,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Taxation of sugar-sweetened beverages had no effect on the incidence rate of type II diabetes in India.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Teaching hospitals do not provide better care than non-teaching hospitals.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Tetraspanin-3 is a causative factor in the development of acute myelogenous leukemia",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "The DdrB protein from Deinococcus radiodurans is an alternative SSB.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "The PPR MDA5 has two N-terminal CARD domains.",
+     "bm25": 48,
+     "dense": 200,
+     "rrf": 88
+    },
+    {
+     "query": "The PRR MDA5 has a central DExD/H RNA helices domain.",
+     "bm25": 9,
+     "dense": 200,
+     "rrf": 34
+    },
+    {
+     "query": "The PRR MDA5 is a sensor of RNA virus infection.",
+     "bm25": 5,
+     "dense": 2,
+     "rrf": 2
+    },
+    {
+     "query": "The US health care system can save up to $750 million if 7% of patients waiting for kidney transplants participate in the optimized national kidney paired donation program.",
+     "bm25": 1,
+     "dense": 3,
+     "rrf": 1
+    },
+    {
+     "query": "The YAP1 and TEAD complex tanslocates into the nucleus where it interacts with transcription factors and DNA-binding proteins that modulate target gene transcription.",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "The amount of publicly available DNA data doubles every 10 years.",
+     "bm25": 200,
+     "dense": 28,
+     "rrf": 64
+    },
+    {
+     "query": "The arm density of TatAd complexes is due to structural rearrangements within Class1 TatAd complexes such as the 'charge zipper mechanism'.",
+     "bm25": 5,
+     "dense": 1,
+     "rrf": 2
+    },
+    {
+     "query": "The availability of safe places to study is effective at decreasing homelessness.",
+     "bm25": 200,
+     "dense": 4,
+     "rrf": 14
+    },
+    {
+     "query": "The availability of safe places to study is not effective at decreasing homelessness.",
+     "bm25": 200,
+     "dense": 5,
+     "rrf": 16
+    },
+    {
+     "query": "The benefits of colchicine were achieved with effective widespread use of secondary prevention strategies such as high-dose statins.",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "The binding orientation of the ML-SA1 activator at hTRPML2 is different from the binding orientation of the ML-SA1 activator at hTRPML1.",
+     "bm25": 200,
+     "dense": 9,
+     "rrf": 24
+    },
+    {
+     "query": "The center of the granuloma in an immune cell induces a pro-inflammatory immune response.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "The combination of H3K4me3 and H3K79me2 is found in quiescent hair follicle stem cells.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "The composition of myosin-II isoform switches from the polarizable B isoform to the more homogenous A isoform during hematopoietic differentiation.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "The deregulated and prolonged activation of monocytes has deleterious effects in inflammatory diseases.",
+     "bm25": 200,
+     "dense": 68,
+     "rrf": 200
+    },
+    {
+     "query": "The extracellular domain of TMEM27 is cleaved in human beta cells.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "The genomic aberrations found in matasteses are very similar to those found in the primary tumor.",
+     "bm25": 200,
+     "dense": 13,
+     "rrf": 35
+    },
+    {
+     "query": "The locus rs647161 is associated with colorectal carcinoma.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "The loss of the TET protein functions may have dire biological consequences, such as myeloid cancers.",
+     "bm25": 53,
+     "dense": 32,
+     "rrf": 11
+    },
+    {
+     "query": "The minor G allele of FOXO3 is related to more severe symptoms of Crohn's Disease.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "The myocardial lineage develops from cardiac progenitors of mesodermal origin.",
+     "bm25": 200,
+     "dense": 1,
+     "rrf": 44
+    },
+    {
+     "query": "The one-child policy has been successful in lowering population growth.",
+     "bm25": 12,
+     "dense": 40,
+     "rrf": 8
+    },
+    {
+     "query": "The relationship between a breast cancer patient's capacity to metabolize tamoxifen and treatment outcome is dependent on the patient's genetic make-up.",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "The repair of Cas9-induced double strand breaks in human DNA is error-prone.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "The risk of breast cancer among parous women increases with placental weight of pregnancies, and this association is strongest for premenopausal breast cancer.",
+     "bm25": 2,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "The risk of male prisoners harming themselves is ten times that of female prisoners.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "The severity of cardiac involvement in amyloidosis can be described by the degree of transmurality of late gadolinium enhancement in MRI.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "The single flash-evoked ERG b-wave is generated by activity of ON-bipolar cells.",
+     "bm25": 4,
+     "dense": 18,
+     "rrf": 5
+    },
+    {
+     "query": "The sliding activity of kinesin-8 protein Kip3 promotes bipolar spindle assembly.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "The tip of the inner tube of the toxic type VI secretion system (T6SS) antibacterial effector in Escherichia coli (E. coli) carries toxic effector proteins.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "The treatment of cancer patients with co-IR blockade does not cause any adverse autoimmune events.",
+     "bm25": 200,
+     "dense": 1,
+     "rrf": 26
+    },
+    {
+     "query": "The treatment of cancer patients with co-IR blockade precipitates adverse autoimmune events.",
+     "bm25": 200,
+     "dense": 1,
+     "rrf": 21
+    },
+    {
+     "query": "The ureABIEFGH gene cluster encodes urease maturation proteins : UreD/UreH, UreE, UreF, and UreG.",
+     "bm25": 28,
+     "dense": 28,
+     "rrf": 7
+    },
+    {
+     "query": "The ureABIEFGH gene cluster is induced by nickel (II) ion.",
+     "bm25": 200,
+     "dense": 20,
+     "rrf": 35
+    },
+    {
+     "query": "Therapeutic use of the drug Dapsone to treat pyoderma gangrenous is based on anecdotal evidence.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "There is an inverse relationship between hip fractures and statin use.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "There is no association between HNF4A mutations and diabetes risks.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Thigh-length graduated compression stockings (GCS) did not reduce deep vein thrombosis in patients admitted to hospital who are immobile because of acute stroke.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Tirasemtiv has no effect on fast-twitch muscle.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Transferred UCB T cells acquire a memory-like phenotype in recipients.",
+     "bm25": 29,
+     "dense": 10,
+     "rrf": 15
+    },
+    {
+     "query": "Transplanted human glial cells can differentiate within the host animal.",
+     "bm25": 4,
+     "dense": 2,
+     "rrf": 2
+    },
+    {
+     "query": "Transplanted human glial progenitor cells are incapable of forming a neural network with host animals' neurons.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Tumor necrosis factor alpha (TNF-\u03b1) and interleukin-1 (IL-1) are pro-inflammatory cytokines that inhibit IL-6 and IL-10.",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "UCB T cells maintain high TCR diversity after transplantation.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "UCB T cells reduce TCR diversity after transplantation.",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "Ubiquitin ligase UBC13 generates a K63-linked polyubiquitin moiety at PCNA K164.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Ultrasound guidance significantly raises the number of traumatic procedures when attempting needle insertion.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Up-regulation of the p53 pathway and related molecular events casues cancer resistance and results in a significantly shortened lifespan marked by senescent cells and accelerated organismal aging.",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "Upregulation of mosGCTL-1 is induced upon infection with West Nile virus.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Varenicline monotherapy is more effective after 12 weeks of treatment compared to combination nicotine replacement therapies with varenicline or bupropion.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Venules have a larger lumen diameter than arterioles.",
+     "bm25": 3,
+     "dense": 200,
+     "rrf": 10
+    },
+    {
+     "query": "Venules have a thinner or absent smooth layer compared to arterioles.",
+     "bm25": 1,
+     "dense": 200,
+     "rrf": 16
+    },
+    {
+     "query": "Vitamin D deficiency effects the term of delivery.",
+     "bm25": 21,
+     "dense": 1,
+     "rrf": 6
+    },
+    {
+     "query": "Vitamin D deficiency is unrelated to birth weight.",
+     "bm25": 6,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Women with a higher birth weight are more likely to develop breast cancer later in life.",
+     "bm25": 3,
+     "dense": 1,
+     "rrf": 2
+    },
+    {
+     "query": "aPKCz causes tumour enhancement by affecting glutamine metabolism.",
+     "bm25": 13,
+     "dense": 1,
+     "rrf": 3
+    },
+    {
+     "query": "cSMAC formation enhances weak ligand signalling.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "mTORC2 regulates intracellular cysteine levels through xCT inhibition.",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "p16INK4A accumulation is  linked to an abnormal wound response caused by the microinvasive step of advanced Oral Potentially Malignant Lesions (OPMLs).",
+     "bm25": 26,
+     "dense": 3,
+     "rrf": 3
+    }
+   ],
+   "wins": {
+    "BM25": 62,
+    "dense": 85,
+    "tie": 153,
+    "RRF best or equal": 223
+   }
+  },
+  "nfcorpus": {
+   "docs": 3633,
+   "queries": 323,
+   "systems": {
+    "BM25": {
+     "ndcg@10": 0.3088486168538516,
+     "recall@1": 0.05628140038840131,
+     "recall@3": 0.10394206639363077,
+     "recall@5": 0.11961955834915435,
+     "recall@10": 0.15160093319178067,
+     "recall@20": 0.174998161325202,
+     "recall@50": 0.21174185627222883,
+     "recall@100": 0.23490969187773708
+    },
+    "dense": {
+     "ndcg@10": 0.34363867454515645,
+     "recall@1": 0.0530535455776405,
+     "recall@3": 0.10112224024789801,
+     "recall@5": 0.12666179742301237,
+     "recall@10": 0.162817353493182,
+     "recall@20": 0.19928554881354366,
+     "recall@50": 0.24885589507442651,
+     "recall@100": 0.2967035723557199
+    },
+    "RRF": {
+     "ndcg@10": 0.344766548725236,
+     "recall@1": 0.061557903872783946,
+     "recall@3": 0.11478806281059425,
+     "recall@5": 0.13323257527046156,
+     "recall@10": 0.164754655599547,
+     "recall@20": 0.20282719508877062,
+     "recall@50": 0.2536202167896405,
+     "recall@100": 0.3023112020066656
+    }
+   },
+   "rrf_k": {
+    "1": 0.3485482195351959,
+    "10": 0.3507677315074751,
+    "60": 0.344766548725236,
+    "200": 0.34299370273239027,
+    "1000": 0.3429094928832123
+   },
+   "per_query": [
+    {
+     "query": "Do Cholesterol Statin Drugs Cause Breast Cancer?",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Exploiting Autophagy to Live Longer",
+     "bm25": 24,
+     "dense": 9,
+     "rrf": 20
+    },
+    {
+     "query": "How to Reduce Exposure to Alkylphenols Through Your Diet",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "What\u2019s Driving America\u2019s Obesity Problem?",
+     "bm25": 6,
+     "dense": 1,
+     "rrf": 15
+    },
+    {
+     "query": "Who Should be Careful About Curcumin?",
+     "bm25": 12,
+     "dense": 1,
+     "rrf": 3
+    },
+    {
+     "query": "Foods for Glaucoma",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "What is Actually in Chicken Nuggets?",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "What Do Meat Purge and Cola Have in Common?",
+     "bm25": 1,
+     "dense": 13,
+     "rrf": 3
+    },
+    {
+     "query": "Chronic Headaches and Pork Parasites",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "Stopping Heart Disease in Childhood",
+     "bm25": 5,
+     "dense": 4,
+     "rrf": 9
+    },
+    {
+     "query": "Food Dyes and ADHD",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "How Citrus Might Help Keep Your Hands Warm",
+     "bm25": 7,
+     "dense": 3,
+     "rrf": 1
+    },
+    {
+     "query": "Starving Tumors of Their Blood Supply",
+     "bm25": 26,
+     "dense": 1,
+     "rrf": 12
+    },
+    {
+     "query": "Are Dental X-Rays Safe?",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "How Should I Take Probiotics?",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Breast Cancer & Alcohol: How Much is Safe?",
+     "bm25": 2,
+     "dense": 2,
+     "rrf": 2
+    },
+    {
+     "query": "Diet and Cellulite",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Best Treatment for Constipation",
+     "bm25": 3,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Should We Avoid Titanium Dioxide?",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Avoiding Cooked Meat Carcinogens",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Plant-Based Diets for Psoriasis",
+     "bm25": 32,
+     "dense": 5,
+     "rrf": 16
+    },
+    {
+     "query": "Increasing Muscle Strength with Fenugreek",
+     "bm25": 2,
+     "dense": 48,
+     "rrf": 8
+    },
+    {
+     "query": "How Chemically Contaminated Are We?",
+     "bm25": 39,
+     "dense": 1,
+     "rrf": 2
+    },
+    {
+     "query": "Treating an Enlarged Prostate With Diet",
+     "bm25": 4,
+     "dense": 3,
+     "rrf": 2
+    },
+    {
+     "query": "Optimal Phytosterol Dose and Source",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Is Caffeinated Tea Really Dehydrating?",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Mercury Testing Recommended Before Pregnancy",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Stool Size and Breast Cancer Risk",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "Vitamin D: Shedding some light on the new recommendations",
+     "bm25": 4,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Breast Cancer and Diet",
+     "bm25": 22,
+     "dense": 25,
+     "rrf": 24
+    },
+    {
+     "query": "Can antioxidant-rich spices counteract the effects of a high-fat meal?",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Dioxins Stored in Our Own Fat May Increase Diabetes Risk",
+     "bm25": 3,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Didn't another study show carnitine was good for the heart?",
+     "bm25": 200,
+     "dense": 86,
+     "rrf": 200
+    },
+    {
+     "query": "Any update on the scary in vitro avocado data?",
+     "bm25": 3,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "What do you think of Dr. Jenkins' take on paleolithic diets?",
+     "bm25": 6,
+     "dense": 3,
+     "rrf": 3
+    },
+    {
+     "query": "What about pepper plus turmeric in V8 juice?",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "Is annatto food coloring safe?",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Fresh fruit versus frozen--which is better?",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Are krill oil supplements better than fish oil capsules?",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Is apple cider vinegar good for you?",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "How can you believe in any scientific study?",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "Is vitamin D3 (cholecalciferol) preferable to D2 (ergocalciferol)?",
+     "bm25": 5,
+     "dense": 1,
+     "rrf": 3
+    },
+    {
+     "query": "accidents",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "adenovirus 36",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "African-American",
+     "bm25": 1,
+     "dense": 4,
+     "rrf": 1
+    },
+    {
+     "query": "airport scanners",
+     "bm25": 200,
+     "dense": 7,
+     "rrf": 17
+    },
+    {
+     "query": "Alli",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "alternative medicine",
+     "bm25": 5,
+     "dense": 2,
+     "rrf": 3
+    },
+    {
+     "query": "American Dental Association",
+     "bm25": 3,
+     "dense": 3,
+     "rrf": 2
+    },
+    {
+     "query": "amnesia",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "aneurysm",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "anisakis",
+     "bm25": 3,
+     "dense": 3,
+     "rrf": 4
+    },
+    {
+     "query": "antinutrients",
+     "bm25": 200,
+     "dense": 16,
+     "rrf": 32
+    },
+    {
+     "query": "apnea",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Arkansas",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "ascorbic acid",
+     "bm25": 11,
+     "dense": 4,
+     "rrf": 5
+    },
+    {
+     "query": "Atkins diet",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "avocados",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "bagels",
+     "bm25": 200,
+     "dense": 19,
+     "rrf": 39
+    },
+    {
+     "query": "beans",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "benzene",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "betel nuts",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "bioavailability",
+     "bm25": 58,
+     "dense": 30,
+     "rrf": 51
+    },
+    {
+     "query": "black raspberries",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "blood clots",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "BMAA",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "bone fractures",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "BPH",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "BRCA genes",
+     "bm25": 200,
+     "dense": 70,
+     "rrf": 200
+    },
+    {
+     "query": "breast pain",
+     "bm25": 3,
+     "dense": 4,
+     "rrf": 3
+    },
+    {
+     "query": "bronchiolitis obliterans",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Bush administration",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "cadaverine",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "caloric restriction",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "canker sores",
+     "bm25": 200,
+     "dense": 75,
+     "rrf": 200
+    },
+    {
+     "query": "carcinogens",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 2
+    },
+    {
+     "query": "carrageenan",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "cauliflower",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "chanterelle mushrooms",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "Chernobyl",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "chickpeas",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "chlorophyll",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "cinnamon",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "cocaine",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "coffee",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "coma",
+     "bm25": 1,
+     "dense": 200,
+     "rrf": 6
+    },
+    {
+     "query": "cooking methods",
+     "bm25": 4,
+     "dense": 1,
+     "rrf": 3
+    },
+    {
+     "query": "cortisol",
+     "bm25": 9,
+     "dense": 200,
+     "rrf": 19
+    },
+    {
+     "query": "crib death",
+     "bm25": 8,
+     "dense": 3,
+     "rrf": 1
+    },
+    {
+     "query": "cumin",
+     "bm25": 3,
+     "dense": 200,
+     "rrf": 10
+    },
+    {
+     "query": "Czechoslovakia",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "deafness",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "DHA",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 2
+    },
+    {
+     "query": "dietary scoring",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "domoic acid",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Dr. Dean Ornish",
+     "bm25": 10,
+     "dense": 99,
+     "rrf": 23
+    },
+    {
+     "query": "Dr. Walter Willett",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "ECMO",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "eggnog",
+     "bm25": 200,
+     "dense": 9,
+     "rrf": 22
+    },
+    {
+     "query": "endocrine disruptors",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "energy drinks",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "ergothioneine",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Evidence-based medicine",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "factory farming practices",
+     "bm25": 4,
+     "dense": 1,
+     "rrf": 2
+    },
+    {
+     "query": "fava beans",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "fenugreek",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Finland",
+     "bm25": 1,
+     "dense": 51,
+     "rrf": 8
+    },
+    {
+     "query": "flax oil",
+     "bm25": 10,
+     "dense": 9,
+     "rrf": 10
+    },
+    {
+     "query": "folic acid",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Fosamax",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "fructose",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "galactosemia",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "genetic manipulation",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "Global Burden of Disease Study",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "goji berries",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "grapes",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "growth promoters",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "halibut",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "Harvard Physicians\u2019 Study II",
+     "bm25": 2,
+     "dense": 4,
+     "rrf": 2
+    },
+    {
+     "query": "hearing",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "heme iron",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "hernia",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "Hiroshima",
+     "bm25": 1,
+     "dense": 5,
+     "rrf": 1
+    },
+    {
+     "query": "hormonal dysfunction",
+     "bm25": 4,
+     "dense": 17,
+     "rrf": 3
+    },
+    {
+     "query": "hyperactivity",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "IGF-1",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "industrial toxins",
+     "bm25": 10,
+     "dense": 2,
+     "rrf": 4
+    },
+    {
+     "query": "insects",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "Iowa Women\u2019s Health Study",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "Japan",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "junk food",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "kidney beans",
+     "bm25": 1,
+     "dense": 3,
+     "rrf": 2
+    },
+    {
+     "query": "kohlrabi",
+     "bm25": 1,
+     "dense": 200,
+     "rrf": 3
+    },
+    {
+     "query": "lard",
+     "bm25": 31,
+     "dense": 200,
+     "rrf": 60
+    },
+    {
+     "query": "leeks",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "leucine",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "Lindane",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "liver disease",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "low-carb diets",
+     "bm25": 11,
+     "dense": 2,
+     "rrf": 2
+    },
+    {
+     "query": "lyme disease",
+     "bm25": 200,
+     "dense": 10,
+     "rrf": 33
+    },
+    {
+     "query": "magnesium",
+     "bm25": 3,
+     "dense": 2,
+     "rrf": 2
+    },
+    {
+     "query": "maple syrup",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "mastitis",
+     "bm25": 1,
+     "dense": 5,
+     "rrf": 1
+    },
+    {
+     "query": "medical ethics",
+     "bm25": 1,
+     "dense": 3,
+     "rrf": 2
+    },
+    {
+     "query": "memory",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "mesquite",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "Mevacor",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "milk",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "molasses",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "mouth cancer",
+     "bm25": 2,
+     "dense": 7,
+     "rrf": 1
+    },
+    {
+     "query": "muscle health",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "myelopathy",
+     "bm25": 200,
+     "dense": 1,
+     "rrf": 3
+    },
+    {
+     "query": "National Academy of Sciences",
+     "bm25": 45,
+     "dense": 200,
+     "rrf": 83
+    },
+    {
+     "query": "Native Americans",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "neurocysticercosis",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "NIH-AARP study",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "norovirus",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "nuts",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "okra",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "oral intraepithelial neoplasia",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "organotins",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "oxen meat",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "Panama",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "Parkinson's disease",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "peanut butter",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Peoria",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "pesticides",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "philippines",
+     "bm25": 2,
+     "dense": 27,
+     "rrf": 2
+    },
+    {
+     "query": "phytic acid",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "pineapples",
+     "bm25": 200,
+     "dense": 3,
+     "rrf": 6
+    },
+    {
+     "query": "plant-based diet",
+     "bm25": 95,
+     "dense": 54,
+     "rrf": 38
+    },
+    {
+     "query": "poisonous plants",
+     "bm25": 200,
+     "dense": 35,
+     "rrf": 70
+    },
+    {
+     "query": "polypropylene plastic",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "pork",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "poultry workers",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "prenatal vitamins",
+     "bm25": 200,
+     "dense": 1,
+     "rrf": 29
+    },
+    {
+     "query": "prolactin",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "prunes",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 2
+    },
+    {
+     "query": "pumpkin",
+     "bm25": 200,
+     "dense": 95,
+     "rrf": 200
+    },
+    {
+     "query": "quinine",
+     "bm25": 200,
+     "dense": 28,
+     "rrf": 56
+    },
+    {
+     "query": "rapamycin",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "red tea",
+     "bm25": 48,
+     "dense": 47,
+     "rrf": 47
+    },
+    {
+     "query": "rhabdomyolysis",
+     "bm25": 3,
+     "dense": 3,
+     "rrf": 3
+    },
+    {
+     "query": "rickets",
+     "bm25": 1,
+     "dense": 200,
+     "rrf": 3
+    },
+    {
+     "query": "Rutin",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "salmon",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "saturated fat",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "seafood",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "serotonin",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 2
+    },
+    {
+     "query": "shelf life",
+     "bm25": 1,
+     "dense": 6,
+     "rrf": 1
+    },
+    {
+     "query": "sirtuins",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "smoking",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "soil health",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "spearmint",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Splenda",
+     "bm25": 200,
+     "dense": 14,
+     "rrf": 29
+    },
+    {
+     "query": "St. John's wort",
+     "bm25": 2,
+     "dense": 7,
+     "rrf": 3
+    },
+    {
+     "query": "stevia",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "subsidies",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "sulfur",
+     "bm25": 3,
+     "dense": 2,
+     "rrf": 2
+    },
+    {
+     "query": "suppositories",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "sweeteners",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "taro",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "tempeh",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "thiamine",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "titanium dioxide",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "tongue worm",
+     "bm25": 200,
+     "dense": 7,
+     "rrf": 13
+    },
+    {
+     "query": "trans fats",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Tufts",
+     "bm25": 52,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "turnips",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "ultra-processed foods",
+     "bm25": 1,
+     "dense": 99,
+     "rrf": 14
+    },
+    {
+     "query": "uterine health",
+     "bm25": 200,
+     "dense": 25,
+     "rrf": 51
+    },
+    {
+     "query": "veal",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "veggie chicken",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "viral infections",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "vitamin K",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "walnut oil",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "weight gain",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "whiting",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "worms",
+     "bm25": 200,
+     "dense": 7,
+     "rrf": 15
+    },
+    {
+     "query": "Yale",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "Zoloft",
+     "bm25": 200,
+     "dense": 11,
+     "rrf": 25
+    },
+    {
+     "query": "Preventing Brain Loss with B Vitamins?",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "More Than an Apple a Day: Combating Common Diseases",
+     "bm25": 95,
+     "dense": 99,
+     "rrf": 200
+    },
+    {
+     "query": "Are Organic Foods Safer?",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "Diabetes as a Disease of Fat Toxicity",
+     "bm25": 1,
+     "dense": 8,
+     "rrf": 3
+    },
+    {
+     "query": "Is Milk Good for Our Bones?",
+     "bm25": 5,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Preventing Ulcerative Colitis with Diet",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "The Actual Benefit of Diet vs. Drugs",
+     "bm25": 1,
+     "dense": 13,
+     "rrf": 5
+    },
+    {
+     "query": "The Saturated Fat Studies: Buttering Up the Public",
+     "bm25": 10,
+     "dense": 14,
+     "rrf": 6
+    },
+    {
+     "query": "Coffee and Artery Function",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "Caloric Restriction vs. Plant-Based Diets",
+     "bm25": 6,
+     "dense": 10,
+     "rrf": 4
+    },
+    {
+     "query": "Infectobesity: Adenovirus 36 and Childhood Obesity",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Does Cholesterol Size Matter?",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Barriers to Heart Disease Prevention",
+     "bm25": 13,
+     "dense": 6,
+     "rrf": 2
+    },
+    {
+     "query": "Childhood Constipation and Cow\u2019s Milk",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Diabetics Should Take Their Pulses",
+     "bm25": 2,
+     "dense": 2,
+     "rrf": 2
+    },
+    {
+     "query": "Academy of Nutrition and Dietetics Conflicts of Interest",
+     "bm25": 1,
+     "dense": 3,
+     "rrf": 1
+    },
+    {
+     "query": "Do Vegetarians Get Enough Protein?",
+     "bm25": 10,
+     "dense": 2,
+     "rrf": 5
+    },
+    {
+     "query": "Eggs and Arterial Function",
+     "bm25": 3,
+     "dense": 1,
+     "rrf": 2
+    },
+    {
+     "query": "Treating Asthma With Plants vs. Supplements?",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 2
+    },
+    {
+     "query": "Phytates for the Treatment of Cancer",
+     "bm25": 1,
+     "dense": 12,
+     "rrf": 2
+    },
+    {
+     "query": "Alkylphenol Endocrine Disruptors and Allergies",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Chicken Salmonella Thanks to Meat Industry Lawsuit",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Turmeric Curcumin and Osteoarthritis",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "How Long to Detox From Fish Before Pregnancy?",
+     "bm25": 3,
+     "dense": 4,
+     "rrf": 4
+    },
+    {
+     "query": "Is Caramel Color Carcinogenic?",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Counteracting the Effects of Dioxins Through Diet",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "Chronic Headaches and Pork Tapeworms",
+     "bm25": 2,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "Heart Disease Starts in Childhood",
+     "bm25": 2,
+     "dense": 3,
+     "rrf": 2
+    },
+    {
+     "query": "Artificial Food Colors and ADHD",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Keeping Your Hands Warm With Citrus",
+     "bm25": 2,
+     "dense": 3,
+     "rrf": 2
+    },
+    {
+     "query": "Anti-Angiogenesis: Cutting Off Tumor Supply Lines",
+     "bm25": 4,
+     "dense": 1,
+     "rrf": 3
+    },
+    {
+     "query": "Cancer Risk From CT Scan Radiation",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Preventing the Common Cold with Probiotics?",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Eating Healthy on a Budget",
+     "bm25": 200,
+     "dense": 6,
+     "rrf": 28
+    },
+    {
+     "query": "Flaxseeds & Breast Cancer Survival: Clinical Evidence",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Do Fruit & Nut Bars Cause Weight Gain?",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Titanium Dioxide & Inflammatory Bowel Disease",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Prolonged Liver Function Enhancement From Broccoli",
+     "bm25": 5,
+     "dense": 4,
+     "rrf": 2
+    },
+    {
+     "query": "Apple Juice May Be Worse Than Sugar Water",
+     "bm25": 7,
+     "dense": 9,
+     "rrf": 6
+    },
+    {
+     "query": "Preventing Strokes with Diet",
+     "bm25": 50,
+     "dense": 12,
+     "rrf": 24
+    },
+    {
+     "query": "Neurobiology of Artificial Sweeteners",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Benefits of Fenugreek Seeds",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "More Antibiotics In White Meat or Dark Meat?",
+     "bm25": 200,
+     "dense": 11,
+     "rrf": 52
+    },
+    {
+     "query": "BPA Plastic and Male Sexual Dysfunction",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Filled Full of Lead",
+     "bm25": 11,
+     "dense": 8,
+     "rrf": 6
+    },
+    {
+     "query": "The Answer to the Pritikin Puzzle",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "To Snack or Not to Snack?",
+     "bm25": 4,
+     "dense": 16,
+     "rrf": 7
+    },
+    {
+     "query": "Boosting Good Bacteria in the Colon Without Probiotics",
+     "bm25": 10,
+     "dense": 44,
+     "rrf": 12
+    },
+    {
+     "query": "Optimal Phytosterol Dose",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 2
+    },
+    {
+     "query": "Human Neurotransmitters in Plants",
+     "bm25": 25,
+     "dense": 41,
+     "rrf": 49
+    },
+    {
+     "query": "Kiwifruit for Irritable Bowel Syndrome",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Dietary Treatment of Crohn's Disease",
+     "bm25": 200,
+     "dense": 6,
+     "rrf": 26
+    },
+    {
+     "query": "Unsafe at Any Feed",
+     "bm25": 200,
+     "dense": 49,
+     "rrf": 94
+    },
+    {
+     "query": "Pharmacists Versus Health Food Store Employees: Who Gives Better Advice?",
+     "bm25": 4,
+     "dense": 4,
+     "rrf": 4
+    },
+    {
+     "query": "Preventing Cataracts with Diet",
+     "bm25": 200,
+     "dense": 1,
+     "rrf": 2
+    },
+    {
+     "query": "Cheese Mites and Maggots",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Cholesterol and Lower Back Pain",
+     "bm25": 3,
+     "dense": 2,
+     "rrf": 2
+    },
+    {
+     "query": "EPIC Findings on Lymphoma",
+     "bm25": 3,
+     "dense": 3,
+     "rrf": 2
+    },
+    {
+     "query": "Sometimes the Enzyme Myth Is True",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "Vitamin C-Enriched Bacon",
+     "bm25": 7,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "Out of the Lab Onto the Track",
+     "bm25": 200,
+     "dense": 8,
+     "rrf": 17
+    },
+    {
+     "query": "Dragon's Blood",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Better Than Goji Berries",
+     "bm25": 200,
+     "dense": 17,
+     "rrf": 39
+    },
+    {
+     "query": "How to Help Prevent Abdominal Aortic Aneurysms",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "The Difficulty of Arriving at a Vitamin D Recommendation",
+     "bm25": 2,
+     "dense": 11,
+     "rrf": 4
+    },
+    {
+     "query": "Amyloid and Apple Juice",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Dietary Guidelines: From Dairies to Berries",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "Are Avocados Good for You?",
+     "bm25": 7,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "Relieving Yourself of Excess Estrogen",
+     "bm25": 10,
+     "dense": 8,
+     "rrf": 2
+    },
+    {
+     "query": "Too Much Iodine Can Be as Bad as Too Little",
+     "bm25": 12,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Is Milk and Mucus a Myth?",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Convergence of Evidence",
+     "bm25": 2,
+     "dense": 18,
+     "rrf": 1
+    },
+    {
+     "query": "Is Dragon Fruit Good For You?",
+     "bm25": 21,
+     "dense": 17,
+     "rrf": 8
+    },
+    {
+     "query": "Is Distilled Fish Oil Toxin-Free?",
+     "bm25": 6,
+     "dense": 1,
+     "rrf": 2
+    },
+    {
+     "query": "Acne & Cancer Connection",
+     "bm25": 4,
+     "dense": 1,
+     "rrf": 2
+    },
+    {
+     "query": "Overdosing on Greens",
+     "bm25": 200,
+     "dense": 200,
+     "rrf": 200
+    },
+    {
+     "query": "Dietary Theory of Alzheimer's",
+     "bm25": 19,
+     "dense": 3,
+     "rrf": 13
+    },
+    {
+     "query": "Meat & Multiple Myeloma",
+     "bm25": 62,
+     "dense": 3,
+     "rrf": 9
+    },
+    {
+     "query": "Apthous Ulcer Mystery Solved",
+     "bm25": 200,
+     "dense": 1,
+     "rrf": 8
+    },
+    {
+     "query": "EPIC Study",
+     "bm25": 6,
+     "dense": 4,
+     "rrf": 8
+    },
+    {
+     "query": "Update on Herbalife\u00ae",
+     "bm25": 3,
+     "dense": 200,
+     "rrf": 6
+    },
+    {
+     "query": "Saturated Fat & Cancer Progression",
+     "bm25": 19,
+     "dense": 16,
+     "rrf": 21
+    },
+    {
+     "query": "Aluminum in Vaccines vs. Food",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Are Multivitamins Good For You?",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Fish Fog",
+     "bm25": 1,
+     "dense": 6,
+     "rrf": 1
+    },
+    {
+     "query": "Sexually Transmitted Fish Toxin",
+     "bm25": 5,
+     "dense": 13,
+     "rrf": 3
+    },
+    {
+     "query": "Veggies vs. Cancer",
+     "bm25": 7,
+     "dense": 1,
+     "rrf": 3
+    },
+    {
+     "query": "Alcohol Risks vs. Benefits",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Is Coconut Milk Good For You?",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "Boosting Heart Nerve Control",
+     "bm25": 24,
+     "dense": 4,
+     "rrf": 3
+    },
+    {
+     "query": "Kuna Indian Secret",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "The Healthiest Sweetener",
+     "bm25": 200,
+     "dense": 3,
+     "rrf": 14
+    },
+    {
+     "query": "Are Artificial Colors Bad for You?",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Healthiest Airplane Beverage",
+     "bm25": 19,
+     "dense": 85,
+     "rrf": 39
+    },
+    {
+     "query": "Antioxidant Content of 300 Foods",
+     "bm25": 49,
+     "dense": 21,
+     "rrf": 20
+    },
+    {
+     "query": "Plant vs. Cow Calcium",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Vitamin Supplements Worth Taking",
+     "bm25": 9,
+     "dense": 5,
+     "rrf": 8
+    },
+    {
+     "query": "Healthy Chocolate Milkshakes",
+     "bm25": 2,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "The Healthiest Vegetables",
+     "bm25": 21,
+     "dense": 200,
+     "rrf": 55
+    },
+    {
+     "query": "Bowel Movement Frequency",
+     "bm25": 1,
+     "dense": 1,
+     "rrf": 1
+    },
+    {
+     "query": "Olive Oil and Artery Function",
+     "bm25": 1,
+     "dense": 2,
+     "rrf": 1
+    },
+    {
+     "query": "How Doctors Responded to Being Named a Leading Killer",
+     "bm25": 86,
+     "dense": 1,
+     "rrf": 11
+    }
+   ],
+   "wins": {
+    "BM25": 67,
+    "dense": 99,
+    "tie": 157,
+    "RRF best or equal": 231
+   }
+  }
+ }
+}
