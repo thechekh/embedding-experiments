@@ -25,6 +25,7 @@ from retrieval import encode, evaluate, load_benchmark, rank
 SLUG = "how-many-embedding-dimensions-do-you-actually-need"
 MODELS_HERE = ["sentence-transformers/static-retrieval-mrl-en-v1", "BAAI/bge-small-en-v1.5", "sentence-transformers/all-MiniLM-L6-v2"]
 DIMS = [8, 16, 32, 64, 128, 256, 384, 512, 1024]
+MATRYOSHKA = {"sentence-transformers/static-retrieval-mrl-en-v1"}  # trained to be truncated
 SHORT = {name: name.split("/")[-1] for name in MODELS_HERE}
 
 
@@ -70,8 +71,15 @@ def compute() -> dict:
                                        queries_random[:, :k])
         quantised, scale = quantise(docs)
         entry["int8"] = score(benchmark, quantised.astype(np.float32) / scale, queries)
+        # The recommended 128-dimension cut, in float32 and in int8
+        cut = "truncate" if name in MATRYOSHKA else "pca"
+        cut_docs, cut_queries = (docs, queries) if name in MATRYOSHKA else (docs_pca, queries_pca)
+        small, small_scale = quantise(cut_docs[:, :128])
+        entry["float_128"] = entry[cut][128]
+        entry["int8_128"] = score(benchmark, small.astype(np.float32) / small_scale, cut_queries[:, :128])
         results["models"][name] = entry
-        print(f"{SHORT[name]} ({full} dims): full nDCG@10 {entry['full']['ndcg@10']:.3f}, int8 {entry['int8']['ndcg@10']:.3f}")
+        print(f"{SHORT[name]} ({full} dims): full nDCG@10 {entry['full']['ndcg@10']:.3f}, int8 {entry['int8']['ndcg@10']:.3f}; "
+              f"128 dims by {cut}: float32 {entry['float_128']['ndcg@10']:.3f}, int8 {entry['int8_128']['ndcg@10']:.3f}")
         for k in entry["truncate"]:
             print(f"   {k:4d} dims   first-k {entry['truncate'][k]['ndcg@10']:.3f}   PCA {entry['pca'][k]['ndcg@10']:.3f}   random {entry['random'][k]['ndcg@10']:.3f}"
                   f"   variance kept by PCA {entry['explained_variance'][k - 1]:.0%}")
