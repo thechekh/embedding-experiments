@@ -104,7 +104,8 @@ class BM25:
 # --- Dense search -----------------------------------------------------------------------
 
 
-def encode(model_name: str, texts: list[str], kind: str, benchmark: str, max_seq_length: int = 256, chunk: int = 256) -> tuple[np.ndarray, float]:
+def encode(model_name: str, texts: list[str], kind: str, benchmark: str, max_seq_length: int = 256, chunk: int = 256,
+           revision: str | None = None) -> tuple[np.ndarray, float]:
     """Unit-length embeddings for `texts`, cached under results/embeddings/. Returns the
     vectors and the seconds the encoding took (0 when served from the cache)."""
     from sentence_transformers import SentenceTransformer
@@ -116,7 +117,7 @@ def encode(model_name: str, texts: list[str], kind: str, benchmark: str, max_seq
         return np.load(path), json.loads(meta.read_text())["seconds"]
     query_prefix, passage_prefix = MODELS[model_name]
     prefix = query_prefix if kind == "queries" else passage_prefix
-    model = SentenceTransformer(model_name, device="cpu")
+    model = SentenceTransformer(model_name, device="cpu", revision=revision)
     try:
         model.max_seq_length = max_seq_length
     except AttributeError:  # a static model has no sequence limit to set

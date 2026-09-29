@@ -7,3 +7,4 @@ results/embeddings/
 results/benchmark.log
 results/benchmark.err
 run_benchmark.cmd
+results/*.partial.json
